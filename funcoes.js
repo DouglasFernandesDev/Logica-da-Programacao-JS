@@ -61,11 +61,11 @@ sayMyName(() => {
 
 function Person(name) {
   this.name = name
-  this.walk = function () {
-    return this.name + ' está andando'
+  this.coding = function () {
+    return this.name + ' está codandando'
   }
 }
 const douglas = new Person('Douglas')
 const joao = new Person('Joao')
-console.log(douglas.walk())
+console.log(douglas.coding())
 console.log(joao.walk())
