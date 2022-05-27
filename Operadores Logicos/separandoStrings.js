@@ -6,5 +6,5 @@
 
 let phrase = 'Eu quero viver o Amor'
 let myArray = phrase.split(' ') //transofrma em ARRAY
-let phraseWithUnderscore = myArray.join('_') // Transforma em STRING
+let phraseWithUnderscore = myArray.join('') // Transforma em STRING
 console.log(phraseWithUnderscore)

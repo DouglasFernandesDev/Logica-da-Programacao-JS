@@ -1,0 +1,25 @@
+/*
+      2 VALORES BOOLEANOS, QUANDO VERIFICADOS,
+      RESULTARA EM VERDADEIRO OU FALSO
+*/
+
+let pao = true
+let queijo = true
+
+/*  AND    &&     SE AMBOS FOREM TRUE = TUDO TRUE
+SE SO UM FOR TRUE = FALSE
+SE AMBOS FOREM FALSOS = TUDO FALSE
+
+*/
+console.log(pao && queijo)
+
+/*  OR     ||     SE TIVER UM OU OUTRO = TRUE
+SE TIVER APENAS UM DOS DOIS = TRUE
+SE NAO TIVER NENHUM = FALSE
+*/
+console.log(pao || queijo)
+
+/*  NOT    !      SEMPRE QUE USADO ESTARA TROCANDO O VALOR DA VARIAVEL
+NESTE CASO SE TORNA FALSE POIS AMBOS ESTAO TRUE
+*/
+console.log(!pao, !queijo)
