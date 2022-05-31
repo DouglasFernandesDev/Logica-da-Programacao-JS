@@ -13,26 +13,27 @@ function transform(degree) {
   //fluxo de erro
   if (!celsius && !fahrenheit) {
     throw new Error('Grau nao identificado')
-
+  }
     //fluxo ideal, F -> C
-    let udpatedDegree = Number(degree.toUpperCase().replace('F', ''))
-    let formula = fahrenheit => ((fahrenheit - 32) * 5) / 9
+    let udpatedDegree = Number(degree.toUpperCase().replace('F', ''));
+    let formula = fahrenheit => (fahrenheit - 32) * 5/9
     let degreeSign = 'C'
     //fluxo alternativo C -> F
     if (celsius) {
-      udpatedDegree = Number(degree.toUpperCase().replace('C', ''))
-      formula = celsius => (celsius * 9) / 5 + 32
-      degreeSign = 'F'
+        udpatedDegree = Number(degree.toUpperCase().replace('C', ''))
+        formula = celsius => (celsius * 9) / 5 + 32
+        degreeSign = 'F'
     }
 
     return formula(udpatedDegree) + degreeSign
   }
-}
+
 
 try {
   console.log(transform('10C'))
   console.log(transform('50F'))
-  transform('50Z')
+  transform('50F')
+
 } catch (error) {
   console.log(error.message)
 }
