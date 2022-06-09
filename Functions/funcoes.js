@@ -1,36 +1,36 @@
 const sum = function (number1, number2) {
-  total = number1 + number2
-  return total
-}
+  total = number1 + number2;
+  return total;
+};
 
-let number1 = 34
-let number2 = 25
-sum(number1, number2)
+let number1 = 34;
+let number2 = 25;
+sum(number1, number2);
 
-console.log(`o número 1 é ${number1}`)
-console.log(`o número 2 é ${number2}`)
-console.log(`a soma é ${sum(number1, number2)}`)
+console.log(`o número 1 é ${number1}`);
+console.log(`o número 2 é ${number2}`);
+console.log(`a soma é ${sum(number1, number2)}`);
 
 /**************/
 
 function fazerSuco(fruta1, fruta2) {
-  return 'suco de: ' + fruta1 + fruta2
+  return `suco de: ${fruta1}${fruta2}`;
 }
 
-const copo = fazerSuco('banana ', 'maçã')
+const copo = fazerSuco('banana ', 'maçã');
 
-console.log(copo)
+console.log(copo);
 
 /****************/
 
-let subject = 'create video'
+let subject = 'create video';
 function createThink(subject) {
-  subject = 'study'
-  return subject
+  subject = 'study';
+  return subject;
 }
 
-console.log(createThink(subject))
-console.log(subject)
+console.log(createThink(subject));
+console.log(subject);
 
 /*    Function  Hoisting
 
@@ -49,23 +49,21 @@ sayMyName('Douglas')
 */
 
 function sayMyName(name) {
-  console.log('antes de executar a função callback')
-  name()
-  console.log('depois de executar a callback')
+  console.log('antes de executar a função callback');
+  name();
+  console.log('depois de executar a callback');
 }
 sayMyName(() => {
-  console.log('estou em uma callback')
-})
+  console.log('estou em uma callback');
+});
 
 /*******  Função constructor  *******/
 
 function Person(name) {
-  this.name = name
+  this.name = name;
   this.coding = function () {
-    return this.name + ' está codandando'
-  }
+    return this.name + ' está codandando';
+  };
 }
-const douglas = new Person('Douglas')
-const joao = new Person('Joao')
-console.log(douglas.coding())
-console.log(joao.walk())
+const douglas = new Person('Douglas');
+console.log(douglas.coding());
