@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokenpô</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>JS - Jokenpô</h1>
+      <div class="wrapper">
+        <div>
+          <h3>Jogador:</h3>
+          <img src="./assets/img/pedra.png" alt="pedra" />
+          <img src="./assets/img/papel.png" alt="pedra" />
+          <img src="./assets/img/tesoura.png" alt="pedra" />
+
+          <form name="frmJokenpô" id="form">
+            Pedra<input type="radio" name="grupo" id="pedra"></input>
+            <input type="radio" name="grupo" id="papel">Papel</input>
+            <input type="radio" name="grupo" id="tesoura">Tesoura</input>
+              <p>
+                <input type="button" value=" JOGAR " onclick="jogar()">
+                <input type="reset" value=" RESET " onclick="resetar()">
+              </p>
+          </form>
+          <hr>
+          <h3>Computador:</h3>
+          <img src="./assets/img/pc.png" alt="PC" id="pc"/>
+          <hr>
+          <h3 id="placar">Resultado</h3>
+        </div>
+      </div>
+      <script src="./assets/js/main.js"></script>
+    </section>
+  </body>
+</html>

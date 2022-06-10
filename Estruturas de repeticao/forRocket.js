@@ -5,7 +5,7 @@
 
 for (let i = 10; i > 0; i--) {
   if (i === 5) {
-    continue
+    continue;
   }
-  console.log(i)
+  console.log(i);
 }
