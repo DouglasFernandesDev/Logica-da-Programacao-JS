@@ -12,5 +12,3 @@ const pessoa = {
 for (let key in pessoa){
   console.log(`${key}: ${pessoa[key]}`);
 }
-for of não é iteravel
-*/
