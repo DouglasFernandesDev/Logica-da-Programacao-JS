@@ -26,11 +26,12 @@ body {
   border-radius: 10px;
 }
 
-.calculadora {
-  width: 400px;
+h1 {
+  text-align: center;
 }
 
 .display {
+  display: flex;
   font-size: 2em;
   width: 100%;
   text-align: right;

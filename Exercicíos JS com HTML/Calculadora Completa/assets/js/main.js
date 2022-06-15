@@ -1,7 +1,3 @@
-/*
-        Capturar evento submit
-*/
-
 function criaCauculadora() {
   
   return {
