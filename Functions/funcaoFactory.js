@@ -10,7 +10,7 @@ function criaPessoa(nome, sobrenome, a, p) {
     set nomeCompleto(valor) {
       valor = valor.split(' ');
       this.nome = valor.shift();
-      console.log(valor);
+      this.sobrenome = valor.join(' ');
     },
 
     fala(assunto) {
@@ -37,3 +37,4 @@ console.log("#######");
 console.log(p1.imc);
 console.log(p2.imc);
 p1.nomeCompleto = 'Jackson Philippe Silva';
+console.log(p1.sobrenome);
