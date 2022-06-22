@@ -15,16 +15,3 @@ nomes.splice(0, 0, 'Luiz', 'Maria');
 
 console.table(nomes);
 //console.log(removidos);
-
-console.log('#####');
-
-const pessoa = {
-  nome: 'Eduardo',
-  altura: 1.80,
-  peso: 85,
-  aniversario: '05/05/1985'
-};
-
-const itens = pessoa;
-console.table(pessoa);
-console.log(itens);
