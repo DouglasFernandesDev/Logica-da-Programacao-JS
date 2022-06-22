@@ -30,6 +30,6 @@ console.log(moreLetters);
 const moreYears = pessoas.filter(objeto => objeto.idade > 50);
 console.log(moreYears);
 
-const finalAperson = pessoas.filter(objeto => objeto.nome.toLowerCase()
-.endsWith('a'));
+const finalAperson = pessoas.filter(objeto => objeto.nome.
+  toLowerCase().endsWith('a'));
 console.log(finalAperson);
