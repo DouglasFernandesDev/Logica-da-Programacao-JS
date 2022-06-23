@@ -1,4 +1,4 @@
-//map(valor, indice, array);
+//.map(valor, indice, array);
 
 //Dobre os numeros = valor * 2
 //Triplicar os numeros = valor * 3
