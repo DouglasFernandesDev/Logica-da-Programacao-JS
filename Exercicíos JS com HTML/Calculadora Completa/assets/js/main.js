@@ -10,7 +10,7 @@ function criaCauculadora() {
 
     pressionaEnter() {
       this.display.addEventListener('keypress', e => {
-        if (e.keyCode === 13) {
+        if (e.key === 'Enter') {
           this.realizaConta();
         }
       });
