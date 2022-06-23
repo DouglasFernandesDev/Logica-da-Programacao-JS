@@ -19,3 +19,11 @@ console.log(`Os pares são ${pares}`);
 const dobroPares = numeros.filter(valor => valor % 2 === 0)
 .map(valor => valor * 2);
 console.log(`Dobro dos pares é ${dobroPares}`);
+
+const juntaTudo = numeros
+.filter(valor => valor % 2 === 0)
+.map(valor => valor * 2)
+.reduce((ac, valor) => {
+  return ac+ valor;
+}, 0)
+console.log(`Olha só tudo junto fica: ${juntaTudo}`);
