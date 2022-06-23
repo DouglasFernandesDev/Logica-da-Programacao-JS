@@ -23,7 +23,5 @@ console.log(`Dobro dos pares é ${dobroPares}`);
 const juntaTudo = numeros
 .filter(valor => valor % 2 === 0)
 .map(valor => valor * 2)
-.reduce((ac, valor) => {
-  return ac+ valor;
-}, 0)
+.reduce((ac, valor) => ac+ valor);
 console.log(`Olha só tudo junto fica: ${juntaTudo}`);
