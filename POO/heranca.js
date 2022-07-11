@@ -25,7 +25,7 @@ class Smartphone extends DispositivoEletronico {
   constructor(nome, cor, modelo) {
     super(nome);
     this.cor = cor;
-    this.modelo = modelo
+    this.modelo = modelo;
   }
 }
 
