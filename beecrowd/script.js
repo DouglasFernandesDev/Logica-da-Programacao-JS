@@ -4,7 +4,8 @@ const B = parseInt(lines.shift());
 const X = A + B
 */
 const input = require("fs").readFileSync("stdin", "utf-8");
+const [A , B] = input.split('\n');
 
-const qtdMinutos = (60 * input) / 30;
+const totalKm = (A * B) / 12;
 
-console.log(qtdMinutos + " minutos");
+console.log(totalKm.toFixed(3));
