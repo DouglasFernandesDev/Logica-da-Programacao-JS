@@ -21,16 +21,17 @@ document.addEventListener('click', e => {
   }
 })
 
-function loadPage(el) {
+async function loadPage(el) {
   const href = el.getAttribute('href');
-  
-  request({
+  try {
+  const res = await request({
     method: 'GET',
     url: href,
-  }).then(res => {
-    loadResult(res);
-  }).catch(err => console.log(err));
-
+  });
+  loadResult(res);
+} catch(e){
+  console.log(e);
+};
 }
 
 function loadResult(res) {
