@@ -6,12 +6,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Pessoa = /*#__PURE__*/_createClass(function Pessoa(nome, sobrenome) {
+var Pessoa = /*#__PURE__*/_createClass(function Pessoa(nome, sobrenome, peso, altura) {
   _classCallCheck(this, Pessoa);
 
   this.nome = nome;
   this.sobrenome = sobrenome;
+  this.peso = peso;
+  this.altura = altura;
 });
 
-var pessoa = new Pessoa('Douglas', 'Fernandes');
+var pessoa = new Pessoa('Douglas', 'Fernandes', 68 + 'kg', 170 + 'cm');
 console.log(pessoa);
