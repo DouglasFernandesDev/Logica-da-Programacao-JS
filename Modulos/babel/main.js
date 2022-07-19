@@ -4,3 +4,5 @@ class Pessoa {
     this.sobrenome = sobrenome;
   }
 }
+const pessoa = new Pessoa('Douglas', 'Fernandes');
+console.log(pessoa);
